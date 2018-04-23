@@ -4,6 +4,7 @@ import Home from './screens/Home.js'
 import Font from './screens/Font.js'
 import Sizing from './screens/Sizing.js'
 import Inputs from './screens/Inputs.js'
+import ScrollViewTest from './screens/ScrollView.js'
 
 const RootStack = StackNavigator(
     {
@@ -11,6 +12,7 @@ const RootStack = StackNavigator(
         Font: { screen: Font },
         Sizing: { screen: Sizing },
         Inputs: { screen: Inputs },
+        ScrollViewTest: { screen: ScrollViewTest}
     },
     {
         initialRouteName: 'Home'
