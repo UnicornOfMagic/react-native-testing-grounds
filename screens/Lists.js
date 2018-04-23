@@ -32,7 +32,6 @@ export default class Lists extends Component<Props> {
                     />
                 </View>
             </View>
-
         )
     }
 }

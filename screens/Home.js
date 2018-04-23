@@ -40,7 +40,7 @@ export default class Home extends Component<Props> {
                         Choose the demo below
                     </Text>
                 </View>
-                <View style={{flex: 1, justifyContent: 'space-between'}}>
+                <View style={{flex: 2, justifyContent: 'space-between'}}>
                     <Button
                         title='Font'
                         onPress={() => this.props.navigation.navigate('Font')}
@@ -60,6 +60,10 @@ export default class Home extends Component<Props> {
                     <Button
                         title='Lists'
                         onPress={() => this.props.navigation.navigate('Lists')}
+                    />
+                    <Button
+                        title='Networking'
+                        onPress={() => this.props.navigation.navigate('Networking')}
                     />
                 </View>
                 <View style={{flex: 1}}/>
