@@ -3,12 +3,14 @@ import { StackNavigator } from 'react-navigation'
 import Home from './screens/Home.js'
 import Font from './screens/Font.js'
 import Sizing from './screens/Sizing.js'
+import Inputs from './screens/Inputs.js'
 
 const RootStack = StackNavigator(
     {
         Home: { screen: Home },
         Font: { screen: Font },
-        Sizing: { screen: Sizing }
+        Sizing: { screen: Sizing },
+        Inputs: { screen: Inputs },
     },
     {
         initialRouteName: 'Home'
