@@ -26,7 +26,7 @@ class Blink extends Component {
     render() {
         let display = this.state.isShowingText ? this.props.text : ' ';
         return (
-            <Text>{display}</Text>
+            <Text style={this.props.style}>{display}</Text>
         );
     }
 }
@@ -49,11 +49,17 @@ export default class App extends React.Component {
                     React Native wraps the fundamental native components, giving you
                     the performance of a native app, plus the clean design of React.
                 </Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
+                <Text style={styles.bigblue}>Also lots of filler to get scrolling</Text>
                 <Greeting name='Paige' style={styles.red}/>
                 <Greeting name='Ben' style={styles.bigblue}/>
                 <Greeting name='Sharon' style={[styles.bigblue, styles.red]}/>
-                <Greeting name='Mark'/>
-                <Blink text='Blinking?!?!'/>
+                <Greeting name='Mark' style={[styles.red, styles.bigblue]}/>
+                <Blink text='Blinking?!?!' style={styles.red}/>
             </ScrollView>
         );
     }
