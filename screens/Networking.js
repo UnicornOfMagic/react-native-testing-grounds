@@ -3,6 +3,9 @@ import React, {Component} from "react";
 
 
 export default class Networking extends Component<Props> {
+    static navigationOptions = {
+        title: 'Networking Demo'
+    };
     constructor(props){
         super(props);
         this.state ={ isLoading: true}
