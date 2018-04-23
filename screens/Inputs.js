@@ -13,6 +13,9 @@ import React, {Component} from "react";
 
 
 export default class Inputs extends Component<Props> {
+    static navigationOptions = {
+        title: 'Inputs Demo'
+    };
     constructor(props) {
         super(props);
         this.state = {text: ''};

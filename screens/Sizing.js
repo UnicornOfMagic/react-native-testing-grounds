@@ -3,6 +3,9 @@ import { Component } from 'react'
 import {View} from "react-native";
 
 export default class Sizing extends Component<Props> {
+    static navigationOptions = {
+        title: 'Sizing Demo'
+    };
     render() {
         return (
             <View style={{flex: 1}}>

@@ -32,7 +32,7 @@ class Blink extends Component {
 
 export default class Font extends Component<Props> {
     static navigationOptions = {
-        title: 'Font'
+        title: 'Font Demo'
     };
 
     render() {

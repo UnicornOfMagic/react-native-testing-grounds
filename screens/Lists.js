@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import {StyleSheet, FlatList, Text, View, SectionList} from "react-native";
 
 export default class Lists extends Component<Props> {
+    static navigationOptions = {
+        title: 'Lists Demo'
+    };
     render() {
         return(
             <View style={styles.container}>
@@ -25,6 +28,7 @@ export default class Lists extends Component<Props> {
                         sections={[
                             {title: 'D', data: ['Devin']},
                             {title: 'J', data: ['Jackson', 'James', 'Jillian', 'Jimmy', 'Joel', 'John', 'Julie']},
+                            {title: 'Z', data: ['Zebra']}
                         ]}
                         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
                         renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
