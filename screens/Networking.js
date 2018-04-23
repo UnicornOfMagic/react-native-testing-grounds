@@ -13,7 +13,7 @@ export default class Networking extends Component<Props> {
     }
 
     getMovieData() {
-        return fetch('https://facebook.github.io/react-native/movies.json')
+        return fetch('https://api.myjson.com/bins/prm7f.json')
             .then((response) => response.json())
             .then((responseJson) => {
 
@@ -32,7 +32,7 @@ export default class Networking extends Component<Props> {
 
     render(){
 
-        if(this.state.isLoading){
+        if(this.state.isLoading) {
             return(
                 <View style={{flex: 1, padding: 20}}>
                     <ActivityIndicator/>
