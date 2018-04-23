@@ -1,4 +1,4 @@
-import {Image, ScrollView, Text} from "react-native";
+import {ScrollView, Text} from "react-native";
 import React, {Component} from "react";
 
 export default class ScrollViewTester extends Component<Props> {

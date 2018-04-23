@@ -1,4 +1,4 @@
-import {Alert, ActivityIndicator, Button, FlatList, Text, View} from "react-native";
+import {ActivityIndicator, Button, FlatList, Text, View} from "react-native";
 import React, {Component} from "react";
 
 
