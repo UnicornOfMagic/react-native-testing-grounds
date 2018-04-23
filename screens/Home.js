@@ -31,25 +31,31 @@ export default class Home extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to React Native!
-                </Text>
-                <Text>Choose the demo below</Text>
-                <Button
-                    title='Font'
-                    onPress={() => this.props.navigation.navigate('Font')}
-                />
-                <Button
-                    title='Sizing'
-                    onPress={() => this.props.navigation.navigate('Sizing')}
-                />
-                <Button
-                    title='Inputs'
-                    onPress={() => this.props.navigation.navigate('Inputs')}
-                />
+                <View style={{flex: 1}}/>
+                <View style={{flex: 1, justifyContent: 'center'}}>
+                    <Text style={styles.welcome}>
+                        Welcome to React Native!
+                    </Text>
+                    <Text style={styles.instructions}>
+                        Choose the demo below
+                    </Text>
+                </View>
+                <View style={{flex: 1, justifyContent: 'space-between'}}>
+                    <Button
+                        title='Font'
+                        onPress={() => this.props.navigation.navigate('Font')}
+                    />
+                    <Button
+                        title='Sizing'
+                        onPress={() => this.props.navigation.navigate('Sizing')}
+                    />
+                    <Button
+                        title='Inputs'
+                        onPress={() => this.props.navigation.navigate('Inputs')}
+                    />
+                </View>
+                <View style={{flex: 1}}/>
             </View>
         )
     }
 }
-
-AppRegistry.registerComponent('AwesomeProject', () => Home);
