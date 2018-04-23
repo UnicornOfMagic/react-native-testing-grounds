@@ -57,6 +57,10 @@ export default class Home extends Component<Props> {
                         title='Scroll View Testing'
                         onPress={() => this.props.navigation.navigate('ScrollViewTest')}
                     />
+                    <Button
+                        title='Lists'
+                        onPress={() => this.props.navigation.navigate('Lists')}
+                    />
                 </View>
                 <View style={{flex: 1}}/>
             </View>
